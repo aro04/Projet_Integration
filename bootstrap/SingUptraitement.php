@@ -3,7 +3,7 @@ $serveur = "localhost";
 $user = "root";
 $pw = "";
 try {
-    $bdd = new PDO("mysql:host=$serveur;dbname=list book", $user, $pw);
+    $bdd = new PDO("mysql:host=$serveur;dbname=booklist", $user, $pw);
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     echo "Erreur:" . $e->getMessage();

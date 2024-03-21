@@ -7,13 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-</head>
 
 <body>
     <div class="card">
         <img class="card-img-top" src="image/desert-7951761_1920.jpg" alt="Card image">
         <div class="card-img-overlay">
-            <form method="POST" action="traitement.php">
+            <form method="POST" action="SingUptraitement.php">
                 <div class="container mt-3">
                     <div class="mb-3 mt-3">
                         <label for="Last_name">Last Name*</label>

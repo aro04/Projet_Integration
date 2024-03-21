@@ -10,22 +10,23 @@
 </head>
 
 <body>
+
     <div class="card">
         <img class="card-img-top" src="image/background-1747786_1920.jpg" alt="Card image">
         <div class="card-img-overlay">
-            <form method="POST" action="traitement.php">
+            <form method="POST" action="ContactTraitement.php">
                 <div class="container mt-3">
                     <div class="mb-3 mt-3">
                         <label for="Username">Username*</label>
                         <input type="text" class="form-control" id="Username" name="Username" placeholder="Username" required>
                     </div>
                     <div class="mb-3">
-                        <label for="Email">Email*</label>
-                        <input type="text" class="form-control" id="Email" name="Email" placeholder="Email" required>
+                        <label for="Email_Adress">Email*</label>
+                        <input type="text" class="form-control" id="Email_Adress" name="Email_Adress" placeholder="Email" required>
                     </div>
                     <div class="mb-3">
-                        <label for="comment">Message*</label>
-                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                        <label for="Message">Message*</label>
+                        <textarea class="form-control" rows="5" id="Message" name="Message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
