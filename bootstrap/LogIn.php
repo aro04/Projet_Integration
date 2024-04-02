@@ -10,33 +10,22 @@
 
 <body>
     <div class="card">
-        <img class="card-img-top" src="image/desert-7951761_1920.jpg" alt="Card image">
+        <img class="card-img-top" src="image/background-1747786_1920.jpg" alt="Card image">
         <div class="card-img-overlay">
-            <form method="POST" action="SingUptraitement.php">
+            <form method="POST" action="LogInTraitement.php">
                 <div class="container mt-3">
                     <div class="mb-3 mt-3">
-                        <label for="Last_name">Last Name*</label>
-                        <input type="text" class="form-control" id="Last_name" name="Last_name" placeholder="Last Name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="First_name">First Name*</label>
-                        <input type="text" class="form-control" id="First_name" name="First_name" placeholder="First Name" required>
-                    </div>
-                    <div class="mb-3">
                         <label for="Email">Email*</label>
                         <input type="text" class="form-control" id="Email" name="Email" placeholder="Email" required>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 mt-3">
                         <label for="Password">Password*</label>
                         <input type="password" class="form-control" id="Password" name="Password" placeholder="Password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
+                    <button type="submit" class="btn btn-primary">Connexion</button>
             </form>
         </div>
     </div>
-    </div>
-
 </body>
 
 </html>

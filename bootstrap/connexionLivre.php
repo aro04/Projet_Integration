@@ -1,6 +1,6 @@
-
 <?php
 include('navigation.html');
+session_start();
 $result = $connectionProjetIntegration->query("SELECT * FROM livres");
 function truncateText($text, $limit)
 {
@@ -10,6 +10,19 @@ function truncateText($text, $limit)
     return $text;
 }
 if ($result) {
+    echo '<div class="clearfix">';
+    echo '<span class="float-end">';
+    if (isset($_SESSION['panier']) && is_array($_SESSION['panier'])) {
+        // Compter le nombre d'articles dans le panier
+        $nombre_articles = count($_SESSION['panier']);
+        echo '<a href="AddToCart.php" type="button" class="btn btn-warning">Panier<span class="badge rounded-pill bg-danger">' . $nombre_articles . '</span></a>';
+    } else {
+        // Gérer le cas où $_SESSION['panier'] n'est pas défini ou n'est pas un tableau
+    }
+    echo '</span>';
+    echo '</div>';
+
+
     // Affichage des produits
     while ($row = $result->fetch_assoc()) {
         echo '<div class="col-sm-6 col-md-3">';
