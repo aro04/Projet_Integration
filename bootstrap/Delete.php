@@ -18,7 +18,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
             if (isset($livre['id']) && $livre['id'] == $id_livre_a_supprimer) {
                 // Supprimer le livre du panier
                 unset($_SESSION['panier'][$index]);
-                break; // Sortir de la boucle une fois que le livre est trouvé et supprimé
+                break;
             }
         }
     }
@@ -27,6 +27,5 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 echo "Contenu du panier après la suppression : <pre>";
 print_r($_SESSION['panier']);
 echo "</pre>";
-// Rediriger vers la page du panier après la suppression
 header("Location: CartIn.php");
 exit;

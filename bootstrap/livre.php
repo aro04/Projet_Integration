@@ -58,7 +58,7 @@
                 if ($resultat->num_rows > 0) {
                     // Affiche les informations du livre
                     $ligne = $resultat->fetch_assoc();
-                    echo '<div class="card border-0" style="width: 1000px;">'; // Utilisation de flexbox pour aligner les éléments
+                    echo '<div class="card border-0" style="width: 1000px;">';
                     // Colonne gauche
                     echo '<div class="card-body">';
                     echo '<h1>' . $ligne["TITRE"] . '</h1>';

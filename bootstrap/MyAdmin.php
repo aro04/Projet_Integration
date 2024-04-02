@@ -4,9 +4,7 @@ include('connexionBD.php');
 $requete_tables = "SHOW TABLES";
 $resultat_tables = $connectionProjetIntegration->query($requete_tables);
 
-// Vérification s'il y a des tables dans la base de données
 if ($resultat_tables->num_rows > 0) {
-    // Affichage des tables dans un tableau HTML
     echo "<h2>Tables dans la base de données :</h2>";
     echo "<table border='1'>";
     while ($row = $resultat_tables->fetch_array()) {
@@ -33,5 +31,4 @@ if ($resultat_tables->num_rows > 0) {
     echo "Aucune table trouvée dans la base de données.";
 }
 
-// Fermeture de la connexion à la base de données
 $connectionProjetIntegration->close();
